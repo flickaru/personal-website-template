@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My awesome website</title>
+    <link href="contact.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- IONICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- END -->
+    <!-- START IMPORTNG FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- STOP IMPORTING FONTS -->
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="header">
+            <div class="full-logo">
+            <a href="/" class="logo">NA</a><a href="/" class="logo" id="green-logo">ME</a></a>
+            </div>
+        </div>
+        <div class="title-nav">
+            <h1 id="title">My awesome website</h1>
+        <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact me</a>
+        <a href="feedback.html">Feedback</a>
+        </div>
+        </div>
+    </div>
+    <marquee>YOU ARE NOW ON THE CONTACT PAGE </marquee>
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong>Info!</strong> Hover over the navigation links (e.g Home) and see what happens! [This is a use of a transition effect]
+    </div>
+    
+
+    <!-- ADDRESS BLOCK -->
+    <br> <div id="contact">
+        <h2 id="header-contact">Contact me</h2>
+        <p>Here are my details in case you want to contact me, whether online or in person.</p>
+    <address>
+        <ion-icon name="person-circle-outline"></ion-icon> John Doe <br>
+        <ion-icon name="mail-outline"></ion-icon> Email: john.mail@gmail.com<br>
+        <ion-icon name="navigate-circle-outline"></ion-icon> 85 Contour Road <br>
+        <ion-icon name="business-outline"></ion-icon> Melbourne, Victoria <br>
+        <ion-icon name="earth-outline"></ion-icon> AUSTRALIA
+    </address>
+        <br>
+
+        <iframe id="gmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3158.0803223015855!2d144.84040391218497!3d-37.67082037189488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad659a9ebaa3917%3A0xf045676052ff090!2sMelbourne%20Airport!5e0!3m2!1sen!2sau!4v1725683096264!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+    </div>
+    <!-- END ADDRESS BLOCK -->
+        <!-- FOOTER -->
+    <div class="footer">
+            <div class="col-1">
+                <h3>PAGE LINKS</h3>
+                <a href="index.html">Home</a> <br>
+                <a id="selected" href="contact.html">Contact me</a> <br>
+                <a href="feedback.html">Feedback</a> <br>
+            </div>
+            <div class="col-2">
+                <h3>CONTACT</h3>
+                <p>85 Contour Road <br>MELBOURNE, VICTORIA, AUS</p>
+                <div class="social-icons">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-discord"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                </div>
+                </div>
+            <div class="col-3">
+                <h3>EMAIL</h3>
+                <div class="email">
+                <input type="text" placeholder="example@gmail.com">
+                </div>
+                <button type="submit">Submit</button>
+            </div>
+    </div>
+
+        <!-- END FOOTER -->
+</body>
+</html>

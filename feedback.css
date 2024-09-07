@@ -1,0 +1,696 @@
+/* FOR EVERY CSS FILE */
+
+/* FOR EVERY CSS FILE */
+
+
+
+
+html {
+  overflow-y: auto; /* Allows scrolling and the showing of scrollbar */
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+
+}
+
+
+body {
+  min-height: 100vh;
+  font-family: Ubuntu;
+}
+
+
+
+marquee {
+  margin-top:73px;
+  font-size: 20px;
+  font-weight: bold;
+  color: lightblue;
+  background-color: gray;
+}
+
+#title {
+  margin:0;
+  text-align: center;
+  font-size: 45px;
+}
+
+.title-nav {
+  margin-right: 230px;
+  align-items: center;
+  display: flex;
+  flex-direction: column; /*make the title and nav into columns */;
+  flex-grow: 1;
+
+}
+
+.topbar {  
+  background-position: center;
+  background-image: url(img/topbar-background.webp);
+  left:0%;
+  top:0%;
+  position: fixed;
+  display:flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  z-index:100;
+}
+
+.topbar #title {
+  color: white;
+}
+
+.full-logo {
+  margin-left: 30px;
+  font-size: 60px;
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 23px;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+#green-logo {
+  color:green;
+  text-decoration: none;
+}
+
+.nav {
+  margin-top:5px;
+  font-size: 18px;
+  font-weight: 500; /* makes the text look heavier */
+  text-decoration: none; /* removes the lines under the links */
+}
+
+.nav a {
+  color:cyan;
+  font-size: 18px;
+  font-weight: 500; /* makes the text look heavier */
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  transition: 0.8s;
+  color:lightgoldenrodyellow;
+}
+
+
+
+
+.alert {
+  padding: 20px;
+  color:white;
+  background-color: #32c1ed;
+}
+
+.closebtn {
+  color:white;
+  float:right;
+  font-size:22px; /* makes it bigger */
+  line-height:20px;
+  cursor:pointer; /* make the cursor a pointer when hovering */
+  transition: 2s;
+}
+
+
+
+.footer {
+  color: #efefef;
+  display:flex;
+  padding: 100px, 15%;
+  margin-top: 150px;
+  position: static;
+  bottom:0; /* the footer will always stick to the bottom */ 
+  background: #333;
+  width: 100%; /* the footer will take up all available width space */
+  box-sizing: border-box;
+}
+
+.footer div {
+  text-align: center;
+}
+
+.footer div h3 {
+  font-weight: 300px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+
+.col-2 {
+  flex-grow: 2;
+}
+
+.col-1 {
+  padding:20px;
+}
+
+.col-1 a {
+  margin-bottom: 10px;
+  color: #efefef;
+  display: block;
+  text-decoration: none; /* removes the underlines in the links */
+}
+
+
+
+.social-icons {
+  font-size: 75px;
+  padding: 20px;
+  color: white;
+}
+
+.social-icons :hover {
+  color: #ff0000;
+}
+
+.social-icons a {
+  color:white;
+}
+
+ion-icon :hover {
+  color: #ff0000;
+}
+
+.email {
+ padding:30px;
+}
+
+.email input {
+  padding:30px;
+  border-radius: 25px; /* makes corners round */
+}
+
+.email input ::placeholder{
+  text-align: center;
+}
+
+
+.footer .selected {
+  color: cyan
+}
+
+
+/* END FOR EVERY CSS FILE */
+
+.question-home textarea {
+  padding:20px;
+}
+
+.question-contact textarea {
+  padding:20px;
+}
+
+.question-feedback textarea {
+  padding:20px;
+}
+
+/* End CSS Desktop */
+
+/* Start Mobile View CSS */
+
+/* iPhone 14 Pro Max CSS */
+
+@media only screen and (width: 430px) {
+
+
+* {
+  max-width:430px;
+  box-sizing: border-box;
+}  
+
+  html, body {
+    overflow-x: hidden; /* Disables scrolling to the right to prevent whitespace errors and formatting/rendering of element errors */
+  }
+
+  
+
+  #gmaps {
+    position: static; /* makes the image go under the text */
+    margin:0; /* resetting all the values for mobile */
+    float:none; /* resetting all the values for mobile */
+    left:0; /* resetting all the values for mobile */
+    top:0; /* resetting all the values for mobile */
+    vertical-align: none; /* resetting all the values for mobile */
+    width:100%;
+
+  }
+
+
+  .col-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .full-logo {
+    display: none; /* when using an iphone 14 the logo will not display */
+  }
+
+  .title-nav {
+    width: 100%;
+    position: relative;
+  }
+
+  #title {
+    left:5px;
+    position: relative;
+    font-size: 37px;
+    text-align: center;
+  }
+
+
+  
+  .topbar {
+    width:100%;
+  }
+
+  .topbar a {
+    position: relative;
+    left:17.5px;
+  }
+
+
+/* FIXES SECTION */
+
+
+  #btn-submit {
+    width: 130px;
+    padding:5px;
+    margin-left: 50px; /* Decreases size of margin to the left. Due to parent settings, the margin will decrease instead of increase. */
+    margin-right: 50px; /* Decreases size of margin to the right. Due to parent settings, the margin will decrease instead of increase. */
+  }
+
+  #ftr-email {
+    width: 150px;
+    padding:25px;
+  }
+  
+  
+
+  
+
+
+
+  /* END FIXES SECTION */
+  
+
+
+
+  .nav {
+    width:390px;
+  }
+
+
+
+
+
+  .introduction {
+    width:100%;
+  }
+
+  .marquee {
+    position: static;
+    left: 0;
+    width:100%;
+  }
+
+}
+
+/* END iPhone 14 Pro Max CSS */
+
+/* iPhone 12 Pro */
+
+@media only screen and (width: 390px) {
+
+
+* {
+  max-width:390px;
+  box-sizing: border-box;
+}  
+
+  html, body {
+    overflow-x: hidden; /* Disables scrolling to the right to prevent whitespace errors and formatting/rendering of element errors */
+  }
+
+
+
+  #gmaps {
+    position: static; /* makes the image go under the text */
+    margin:0; /* resetting all the values for mobile */
+    float:none; /* resetting all the values for mobile */
+    left:0; /* resetting all the values for mobile */
+    top:0; /* resetting all the values for mobile */
+    vertical-align: none; /* resetting all the values for mobile */
+    width:100%;
+
+  }
+
+
+  .col-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .full-logo {
+    display: none; /* when using an iphone 14 the logo will not display */
+  }
+
+  .title-nav {
+    width: 100%;
+    position: relative;
+  }
+
+  #title {
+    left:5px;
+    position: relative;
+    font-size: 37px;
+    text-align: center;
+  }
+
+
+
+  .topbar {
+    width:100%;
+  }
+
+  .topbar a {
+    position: relative;
+    left:17.5px;
+  }
+
+
+/* FIXES SECTION */
+
+
+  #btn-submit {
+    width: 80px;
+    padding:5px;
+    margin-left: 50px; /* Decreases size of margin to the left. Due to parent settings, the margin will decrease instead of increase. */
+    margin-right: 50px; /* Decreases size of margin to the right. Due to parent settings, the margin will decrease instead of increase. */
+  }
+
+  #ftr-email {
+    width: 110px;
+    padding:25px;
+  }
+
+
+
+
+
+
+
+  /* END FIXES SECTION */
+
+
+
+
+  .nav {
+    width:390px;
+  }
+
+
+
+
+
+  .introduction {
+    width:100%;
+  }
+
+  .marquee {
+    position: static;
+    left: 0;
+    width:100%;
+  }
+
+}
+
+/* End iPhone 12 Pro */
+
+/* iPhone XR */
+
+@media only screen and (width: 414px) {
+
+
+* {
+  max-width:414px;
+  box-sizing: border-box;
+}  
+
+  html, body {
+    overflow-x: hidden; /* Disables scrolling to the right to prevent whitespace errors and formatting/rendering of element errors */
+  }
+
+
+
+  #gmaps {
+    position: static; /* makes the image go under the text */
+    margin:0; /* resetting all the values for mobile */
+    float:none; /* resetting all the values for mobile */
+    left:0; /* resetting all the values for mobile */
+    top:0; /* resetting all the values for mobile */
+    vertical-align: none; /* resetting all the values for mobile */
+    width:100%;
+
+  }
+
+
+  .col-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .full-logo {
+    display: none; /* when using an iphone 14 the logo will not display */
+  }
+
+  .title-nav {
+    width: 100%;
+    position: relative;
+  }
+
+  #title {
+    left:5px;
+    position: relative;
+    font-size: 37px;
+    text-align: center;
+  }
+
+
+
+  .topbar {
+    width:100%;
+  }
+
+  .topbar a {
+    position: relative;
+    left:17.5px;
+  }
+
+
+/* FIXES SECTION */
+
+
+  #btn-submit {
+    width: 80px;
+    padding:5px;
+    margin-left: 50px; /* Decreases size of margin to the left. Due to parent settings, the margin will decrease instead of increase. */
+    margin-right: 50px; /* Decreases size of margin to the right. Due to parent settings, the margin will decrease instead of increase. */
+  }
+
+  #ftr-email {
+    width: 110px;
+    padding:25px;
+  }
+
+
+
+
+
+
+
+  /* END FIXES SECTION */
+
+
+
+
+  .nav {
+    width:390px;
+  }
+
+
+
+
+
+  .introduction {
+    width:100%;
+  }
+
+  .marquee {
+    position: static;
+    left: 0;
+    width:100%;
+  }
+
+}
+
+/* End iPhone XR */
+
+
+/* Samsung Galaxy S20 Ultra */
+
+@media only screen and (width: 412px) {
+
+
+* {
+  max-width:412px;
+  box-sizing: border-box;
+}  
+
+  html, body {
+    overflow-x: hidden; /* Disables scrolling to the right to prevent whitespace errors and formatting/rendering of element errors */
+  }
+
+
+
+  #gmaps {
+    position: static; /* makes the image go under the text */
+    margin:0; /* resetting all the values for mobile */
+    float:none; /* resetting all the values for mobile */
+    left:0; /* resetting all the values for mobile */
+    top:0; /* resetting all the values for mobile */
+    vertical-align: none; /* resetting all the values for mobile */
+    width:100%;
+
+  }
+
+
+  .col-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .full-logo {
+    display: none; /* when using an iphone 14 the logo will not display */
+  }
+
+  .title-nav {
+    width: 100%;
+    position: relative;
+  }
+
+  #title {
+    left:5px;
+    position: relative;
+    font-size: 37px;
+    text-align: center;
+  }
+
+
+
+  .topbar {
+    width:100%;
+  }
+
+  .topbar a {
+    position: relative;
+    left:17.5px;
+  }
+
+
+/* FIXES SECTION */
+
+
+  #btn-submit {
+    width: 80px;
+    padding:5px;
+    margin-left: 50px; /* Decreases size of margin to the left. Due to parent settings, the margin will decrease instead of increase. */
+    margin-right: 50px; /* Decreases size of margin to the right. Due to parent settings, the margin will decrease instead of increase. */
+  }
+
+  #ftr-email {
+    width: 110px;
+    padding:25px;
+  }
+
+
+
+
+
+
+
+  /* END FIXES SECTION */
+
+
+
+
+  .nav {
+    width:390px;
+  }
+
+
+
+
+
+  .introduction {
+    width:100%;
+  }
+
+  .marquee {
+    position: static;
+    left: 0;
+    width:100%;
+  }
+
+}
+
+/* End Samsung Galaxy S20 Ultra */
+
+
+/* End Mobile View CSS */

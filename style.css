@@ -1,0 +1,685 @@
+/* FOR EVERY CSS FILE */
+
+
+
+
+html {
+  overflow-y: auto; /* Allows scrolling and the showing of scrollbar */
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+
+}
+
+
+body {
+  min-height: 100vh;
+  font-family: Ubuntu;
+}
+
+
+
+marquee {
+  margin-top:73px;
+  font-size: 20px;
+  font-weight: bold;
+  color: lightblue;
+  background-color: gray;
+}
+
+#title {
+  margin:0;
+  text-align: center;
+  font-size: 45px;
+}
+
+.title-nav {
+  margin-right: 230px;
+  align-items: center;
+  display: flex;
+  flex-direction: column; /*make the title and nav into columns */;
+  flex-grow: 1;
+
+}
+
+.topbar {  
+  background-position: center;
+  background-image: url(img/topbar-background.webp);
+  left:0%;
+  top:0%;
+  position: fixed;
+  display:flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  z-index:100;
+}
+
+.topbar #title {
+  color: white;
+}
+
+.full-logo {
+  margin-left: 30px;
+  font-size: 60px;
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 23px;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+#green-logo {
+  color:green;
+  text-decoration: none;
+}
+
+.nav {
+  margin-top:5px;
+  font-size: 18px;
+  font-weight: 500; /* makes the text look heavier */
+  text-decoration: none; /* removes the lines under the links */
+}
+
+.nav a {
+  color:cyan;
+  font-size: 18px;
+  font-weight: 500; /* makes the text look heavier */
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  transition: 0.8s;
+  color:lightgoldenrodyellow;
+}
+
+
+
+.alert {
+  padding: 20px;
+  color:white;
+  background-color: #32c1ed;
+}
+
+.closebtn {
+  color:white;
+  float:right;
+  font-size:22px; /* makes it bigger */
+  line-height:20px;
+  cursor:pointer; /* make the cursor a pointer when hovering */
+  transition: 2s;
+}
+
+
+
+.footer {
+  color: #efefef;
+  display:flex;
+  padding: 100px, 15%;
+  margin-top: 150px;
+  position: static;
+  bottom:0; /* the footer will always stick to the bottom */ 
+  background: #333;
+  width: 100%; /* the footer will take up all available width space */
+  box-sizing: border-box;
+}
+
+.footer div {
+  text-align: center;
+}
+
+.footer div h3 {
+  font-weight: 300px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+
+.col-2 {
+  flex-grow: 2;
+}
+
+.col-1 {
+  padding:20px;
+}
+
+.col-1 a {
+  margin-bottom: 10px;
+  color: #efefef;
+  display: block;
+  text-decoration: none; /* removes the underlines in the links */
+}
+
+
+
+
+
+.social-icons {
+  font-size: 75px;
+  padding: 20px;
+  color: white;
+}
+
+.social-icons :hover {
+  color: #ff0000;
+}
+
+.social-icons a {
+  color:white;
+}
+
+ion-icon :hover {
+  color: #ff0000;
+}
+
+.email {
+ padding:30px;
+}
+
+.email input {
+  padding:30px;
+  border-radius: 25px; /* makes corners round */
+}
+
+.email input ::placeholder{
+  text-align: center;
+}
+
+.footer .selected {
+  color: cyan
+}
+
+
+
+
+
+
+
+/* END FOR EVERY CSS FILE */
+
+.introduction {
+  position: static;
+  margin-right: 100px;
+  border: 5px solid;
+  border-width: 100%;
+  border-color: black;
+  text-align: center;
+  color:white;
+  background-image: url('img/background.jpg');
+  padding-bottom: 200px;
+  background-repeat: no-repeat; /* doesn't spam the same image all over the div */
+  width: 100%;
+  background-size: cover; /* image covers whole element */
+  background-position: center; /* get the center of the image into what we can see */
+}
+
+.introduction .intro-para {
+  font-weight:200px;
+  font-size: 30px;
+}
+
+.introduction .intro-header {
+  font-weight: 300px;
+  font-size: 40px;
+}
+
+.introduction button {
+  font-size: 20px;
+  display: inline-block;
+  width: 230px;
+  height: 60px;
+  color:white;
+  background-color: #4e4ffa;
+  border-radius: 3px;
+  margin-top: 55px;
+  text-align: center;
+}
+
+.introduction button:hover {
+  background-color: #0102fa;
+}
+
+
+
+
+
+
+
+#cat {
+  float:right;
+  position: absolute; /* makes the image stay */
+  left: 1350px; /* pushing image from the left */
+  top: 670px;
+  max-width:300px;
+  height:250px;
+  border:6px solid black;
+  margin:10px auto 10px auto;
+  vertical-align: middle;
+  line-height: 100px;
+
+}
+
+
+#message {
+ font-family: Pacifico, cursive; /* using a different font for the quote */
+  font-size: 30px; /* Makes the quote bigger */
+  color:white;
+}
+
+#quote {
+  text-align: center;
+  background-color: grey;
+  border:5px;
+  border-style: dashed; /* adds a decoration to the border */
+}
+
+
+
+/* MEDIA */
+
+
+/* Iphone XR */
+
+@media only screen and (width: 414px) {
+
+
+* {
+  max-width:414px;
+  box-sizing: border-box;
+}  
+
+  html, body {
+    overflow-x: hidden; /* Disables scrolling to the right to prevent whitespace errors and formatting/rendering of element errors */
+  }
+
+
+  .col-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .full-logo {
+    display: none; /* when using an iphone 14 the logo will not display */
+  }
+
+  .title-nav {
+    width: 100%;
+    position: relative;
+  }
+
+  #title {
+    left:5px;
+    position: relative;
+    font-size: 37px;
+    text-align: center;
+  }
+
+  .topbar {
+    width:100%;
+  }
+
+  .topbar a {
+    position: relative;
+    left:17.5px;
+  }
+
+
+  input {
+    width: 80px;
+    padding:10px;
+  }
+
+
+
+
+  #btn-submit {
+    margin-left: 40px; /* Decreases size of margin to the left. Due to parent settings, the margin will decrease instead of increase. */
+    margin-right: 40px; /* Decreases size of margin to the right. Due to parent settings, the margin will decrease instead of increase. */
+  }
+
+
+
+
+  .nav {
+    width:414px;
+  }
+
+  #cat {
+    position: static; /* makes the image go under the text */
+    margin:0; /* resetting all the values for mobile */
+    float:none; /* resetting all the values for mobile */
+    left:0; /* resetting all the values for mobile */
+    top:0; /* resetting all the values for mobile */
+    vertical-align: none; /* resetting all the values for mobile */
+
+  }
+
+
+
+  .introduction {
+    width:100%;
+  }
+
+  .marquee {
+    position: static;
+    left: 0;
+    width:100%;
+  }
+
+}
+
+
+/* Samsung Galaxy S20 Ultra */
+
+
+@media only screen and (width: 412px) {
+
+
+* {
+  max-width:412px;
+  box-sizing: border-box;
+}  
+
+  html, body {
+    overflow-x: hidden; /* Disables scrolling to the right to prevent whitespace errors and formatting/rendering of element errors */
+  }
+
+
+  .col-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .full-logo {
+    display: none; /* when using an iphone 14 the logo will not display */
+  }
+
+  .title-nav {
+    width: 100%;
+    position: relative;
+  }
+
+  #title {
+    left:5px;
+    position: relative;
+    font-size: 37px;
+    text-align: center;
+  }
+
+
+  #cat {
+    position: static; /* makes the image go under the text */
+    margin:0; /* resetting all the values for mobile */
+    float:none; /* resetting all the values for mobile */
+    left:0; /* resetting all the values for mobile */
+    top:0; /* resetting all the values for mobile */
+    vertical-align: none; /* resetting all the values for mobile */
+
+  }
+  
+  .topbar {
+    width:100%;
+  }
+
+  .topbar a {
+    position: relative;
+    left:17.5px;
+  }
+
+
+  input {
+    width: 80px;
+    padding:10px;
+  }
+
+
+
+
+  #btn-submit {
+    margin-left: 40px; /* Decreases size of margin to the left. Due to parent settings, the margin will decrease instead of increase. */
+    margin-right: 40px; /* Decreases size of margin to the right. Due to parent settings, the margin will decrease instead of increase. */
+  }
+
+
+
+
+  .nav {
+    width:390px;
+  }
+
+  
+
+
+
+  
+  .marquee {
+    position: static;
+    left: 0;
+    width:100%;
+  }
+
+}
+
+
+
+/*Iphone 12 Pro */
+
+@media only screen and (width: 390px) {
+
+
+* {
+  max-width:390px;
+  box-sizing: border-box;
+}  
+
+  html, body {
+    overflow-x: hidden; /* Disables scrolling to the right to prevent whitespace errors and formatting/rendering of element errors */
+  }
+
+  
+  .col-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .full-logo {
+    display: none; /* when using an iphone 14 the logo will not display */
+  }
+
+  .title-nav {
+    width: 100%;
+    position: relative;
+  }
+
+  #title {
+    left:5px;
+    position: relative;
+    font-size: 37px;
+    text-align: center;
+  }
+
+  .topbar {
+    width:100%;
+  }
+
+  .topbar a {
+    position: relative;
+    left:17.5px;
+  }
+
+
+  input {
+    width: 80px;
+    padding:10px;
+  }
+
+  
+
+
+  #btn-submit {
+    margin-left: 40px; /* Decreases size of margin to the left. Due to parent settings, the margin will decrease instead of increase. */
+    margin-right: 40px; /* Decreases size of margin to the right. Due to parent settings, the margin will decrease instead of increase. */
+  }
+
+
+
+
+  .nav {
+    width:390px;
+  }
+
+  #cat {
+    position: static; /* makes the image go under the text */
+    margin:0; /* resetting all the values for mobile */
+    float:none; /* resetting all the values for mobile */
+    left:0; /* resetting all the values for mobile */
+    top:0; /* resetting all the values for mobile */
+    vertical-align: none; /* resetting all the values for mobile */
+
+  }
+
+
+
+  .introduction {
+    width:100%;
+  }
+
+  .marquee {
+    position: static;
+    left: 0;
+    width:100%;
+  }
+
+}
+
+
+
+
+/*Iphone 14 */
+
+@media only screen and (width: 430px) {
+
+
+* {
+  max-width:430px;
+  box-sizing: border-box;
+}  
+  .col-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-3 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .full-logo {
+    display: none; /* when using an iphone 14 the logo will not display */
+  }
+
+  .title-nav {
+    position: relative;
+  }
+
+  #title {
+    left:30px;
+    position: relative;
+    font-size: 37px;
+    text-align: center;
+  }
+
+  .topbar {
+    width:100%;
+  }
+
+  .topbar a {
+    position: relative;
+    left:17.5px;
+  }
+
+
+  input {
+    width: 100px;
+    padding:10px;
+  }
+
+  
+  #btn-submit {
+    margin-left: 20px; /* Decreases size of margin to the left. Due to parent settings, the margin will decrease instead of increase. */
+    margin-right: 20px; /* Decreases size of margin to the right. Due to parent settings, the margin will decrease instead of increase. */
+  }
+
+  
+  
+  
+  .nav {
+    width:380px;
+  }
+
+  #cat {
+    position: static; /* makes the image go under the text */
+    margin:0; /* resetting all the values for mobile */
+    float:none; /* resetting all the values for mobile */
+    left:0; /* resetting all the values for mobile */
+    top:0; /* resetting all the values for mobile */
+    vertical-align: none; /* resetting all the values for mobile */
+    
+  }
+
+  
+
+  .introduction {
+    width:100%;
+  }
+
+  .marquee {
+    position: static;
+    left: 0;
+    width:100%;
+  }
+  
+}
+
+
+/* END MEDIA QUERY */
